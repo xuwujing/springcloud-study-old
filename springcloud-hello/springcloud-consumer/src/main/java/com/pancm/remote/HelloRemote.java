@@ -15,11 +15,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 * Feign也支持可拔插式的编码器和解码器。
 * Spring Cloud对Feign进行了封装，使其支持了Spring MVC标准注解和HttpMessageConverters。
 * Feign可以与Eureka和Ribbon组合使用以支持负载均衡。
+* 
+* 
 * @Version:1.0.0  
 * @author pancm
 * @date 2018年3月29日
  */
-@FeignClient(name= "springcloud-producer") //指定转发的服务名称，在application.properties中进行配置
+//@FeignClient(name= "springcloud-producer") //指定转发的服务名称，在application.properties中进行配置
+@FeignClient(name= "springcloud-producer",fallback = HelloRemoteHystrix.class)//服务熔断的时候返回fallback类中的内容
 public interface HelloRemote {
     @RequestMapping(value = "/hello")
     public String hello(@RequestParam(value = "name") String name);

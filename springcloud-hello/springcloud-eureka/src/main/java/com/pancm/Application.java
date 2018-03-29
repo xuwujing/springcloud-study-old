@@ -21,5 +21,4 @@ public class Application {
       SpringApplication.run(Application.class, args);
       System.out.println("注册中心服务启动...");
   }
-
 }
