@@ -8,9 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.pancm.remote.HelloRemote;
 
 
+
+
+
 /**
  * 
-* @Title: HelloWorldController
+* @Title: ConsumerController
 * @Description: 
 * 用于做转发请求
 * 通过服务注册中心转发到另一个服务区
@@ -24,11 +27,11 @@ import com.pancm.remote.HelloRemote;
 public class ConsumerController {
 
     @Autowired
-    HelloRemote HelloRemote;
+    HelloRemote helloRemote;
 	
     @RequestMapping("/hello/{name}")
     public String index(@PathVariable("name") String name) {
-        return HelloRemote.hello(name);
+        return helloRemote.hello(name);
     }
 
 }
