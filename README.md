@@ -22,3 +22,13 @@ springcloud-study 是本人在学习系列springcloud的一些工程！
 - [springcloud-hello](https://github.com/xuwujing/springcloud-study-old/tree/master/springcloud-hello): springcloud的hello world版本，其中包括了eureka(服务注册和发现)、feign(服务调用)、ribbon(负载均衡)的测试示例 。
 - [springcloud-hystrix](https://github.com/xuwujing/springcloud-study-old/tree/master/springcloud-hystrix): springcloud的Hystrix熔断测试版本,可以处理服务的熔断防止故障扩散。
 - [springcloud-config](https://github.com/xuwujing/springcloud-study-old/tree/master/springcloud-config): springcloud的config配置中心版本，既可以从本地获取配置信息，也可以从Git仓库获取配置。
+
+
+## 文章列表
+
+[springcloud系列博客:](https://blog.csdn.net/qazwsxpcm/article/category/8611924)
+
+
+- [SpringCloud学习系列之一 ----- 搭建一个高可用的注册中心(Eureka)](https://blog.csdn.net/qazwsxpcm/article/details/80036519)
+
+- [SpringCloud学习系列之二 ----- 服务消费者(Feign)和负载均衡(Ribbon)](https://blog.csdn.net/qazwsxpcm/article/details/86492858)
